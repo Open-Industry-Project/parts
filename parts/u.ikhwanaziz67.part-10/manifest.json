@@ -1,0 +1,31 @@
+{
+  "id": "u.ikhwanaziz67.part-10",
+  "name": "BottomPalletJack",
+  "category": "Equipment",
+  "geometry": {
+    "kind": "rig",
+    "links": [
+      {
+        "name": "body",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.6,
+            0.6,
+            0.6
+          ]
+        },
+        "offset": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    ],
+    "joints": []
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:550:28iv6kddp71"
+  }
+}
