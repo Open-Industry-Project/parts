@@ -1,0 +1,105 @@
+{
+  "id": "u.ikhwanaziz67.part-2",
+  "name": "Pallet Jack",
+  "category": "Equipment",
+  "geometry": {
+    "kind": "rig",
+    "links": [
+      {
+        "name": "Fixbody",
+        "shape": {
+          "kind": "mesh",
+          "asset": "mesh-2"
+        },
+        "offset": [
+          -1.665,
+          -0.85,
+          0.8440088047100638
+        ],
+        "rotation": [
+          -1.5707963267948966,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "collider",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.32438409328460693,
+            1,
+            0.4699999988079071
+          ]
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "hidden": true
+      },
+      {
+        "name": "UpperBody",
+        "parent": "Fixbody",
+        "shape": {
+          "kind": "mesh",
+          "asset": "mesh-3"
+        },
+        "offset": [
+          0.021,
+          1.565,
+          2.6
+        ],
+        "rotation": [
+          -3.141592653589793,
+          0,
+          0
+        ]
+      }
+    ],
+    "joints": [
+      {
+        "name": "UpperBody-joint",
+        "link": "UpperBody",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "min": -0.2,
+        "max": 0.2
+      }
+    ],
+    "bounds": {
+      "length": 0.32438409328460693,
+      "width": 0.4699999988079071,
+      "top": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "mesh-1",
+      "mime": "model/gltf-binary",
+      "file": "assets/4275508342b89bc8dc8737e18f4125fd83dce0820dbc52e49edd88ca45abfeaf.glb"
+    },
+    {
+      "id": "mesh-2",
+      "mime": "model/gltf-binary",
+      "file": "assets/9d9e537c554af7d93ec95e8af2986e12fb2b416c1dec8ddd8e7ef1b77acd3372.glb"
+    },
+    {
+      "id": "mesh-3",
+      "mime": "model/gltf-binary",
+      "file": "assets/4275508342b89bc8dc8737e18f4125fd83dce0820dbc52e49edd88ca45abfeaf.glb"
+    }
+  ],
+  "origin": {
+    "shelf": "v2:105009:nt7hoplmsh"
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:105007:1sydrdqp34k"
+  }
+}
