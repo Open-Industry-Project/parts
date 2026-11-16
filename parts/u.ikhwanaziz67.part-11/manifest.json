@@ -1,0 +1,91 @@
+{
+  "id": "u.ikhwanaziz67.part-11",
+  "name": "Pusher",
+  "category": "Equipment",
+  "geometry": {
+    "kind": "rig",
+    "links": [
+      {
+        "name": "body",
+        "shape": {
+          "kind": "mesh",
+          "asset": "mesh-1"
+        },
+        "offset": [
+          -0.9065336035564542,
+          -0.2206452190876007,
+          -1.0043055340647697
+        ],
+        "rotation": [
+          -1.5707963267948966,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "collider",
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.2983248326927423,
+            1.399999976158142,
+            0.10999999940395355
+          ]
+        },
+        "offset": [
+          0,
+          0.699999988079071,
+          0
+        ],
+        "hidden": true
+      },
+      {
+        "name": "Part2-1",
+        "parent": "body",
+        "shape": {
+          "kind": "mesh",
+          "asset": "mesh-1",
+          "keepNode": "Part2-1"
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "joints": [
+      {
+        "name": "Part2-1-joint",
+        "link": "Part2-1",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "min": -0.09,
+        "max": 1
+      }
+    ],
+    "bounds": {
+      "length": 1.2983248326927423,
+      "width": 0.10999999940395355,
+      "top": 1.399999976158142
+    }
+  },
+  "assets": [
+    {
+      "id": "mesh-1",
+      "mime": "model/gltf-binary",
+      "file": "assets/c5084d85c5892e567f0479bbe2dc7e18724aeea4d64b2154d74df35f3fbf77fc.glb"
+    }
+  ],
+  "origin": {
+    "shelf": "v2:65762:1rxmsoab7ey"
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:65762:1rxmsoab7ey"
+  }
+}
